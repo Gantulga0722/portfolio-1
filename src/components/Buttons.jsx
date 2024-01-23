@@ -1,7 +1,9 @@
-export function Buttons(buttonName) {
+export function Buttons({ buttonName }) {
   return (
-    <button className="flex px-[20px] py-[4px] justify-center items-center rounded-[12px] bg-[#E5E7EB]">
-      {buttonName}
-    </button>
+    <div className="flex px-5 py-1 justify-center items-center rounded-[12px] bg-gray-200">
+      <button className="text-gray-600 font-sans text-[14px] not-italic font-medium leading-5">
+        {buttonName}
+      </button>
+    </div>
   );
 }

@@ -23,3 +23,6 @@ export * from "./TwitterIcon";
 export * from "./TypescriptIcon";
 export * from "./UpworkIcon";
 export * from "./LocationIcon";
+export * from "./HanburgerIcon";
+export * from "./CloseIcon";
+export * from "./ThemeIcon";

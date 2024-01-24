@@ -1,11 +1,18 @@
 import { CloseIcon } from "./icons";
 import { ThemeIcon } from "./icons";
+import { useTheme } from "@/context/ThemeContex";
 
 export function DropDownMenu({ onClose }) {
+  // const { theme, setTheme } = useTheme();
+
+  // const changeThemeHandler = () => {
+  //   setTheme(theme === "light" ? "dark" : "light");
+  // };
+
   return (
-    <div className="flex w-[375px] h-[667px] flex-col items-end shrink-0 bg-[rgba(17_24_39_0.10)] backdrop-blur-sm absolute right-0 top-0 z-[2]">
-      <div className="flex w-[320px] h-[667px] flex-col items-start bg-[#FFF] shadow-[0px_25px_25px_0px_rgba(0,0,0,0.15)]">
-        <div className="flex p-[16px] justify-between items-start self-stretch border-b border-gray-100">
+    <div className="flex w-[375px] h-[720px] flex-col items-end shrink-0 bg-[rgba(17_24_39_0.10)] backdrop-blur-sm absolute right-0 top-0 z-[2]">
+      <div className="flex w-[320px] h-[667px] flex-col items-start bg-[#FFF] shadow-[0px_25px_25px_0px_rgba(0,0,0,0.15)] sm:flex-row">
+        <div className="flex p-[16px] justify-between items-start self-stretch border-b border-gray-100 sm:hidden">
           <div>
             <h1 className="text-[#111827] text-center font-sans text-[30px] not-italic font-bold leading-9 tracking-[-0.48px]">
               &lt;SS /&gt;

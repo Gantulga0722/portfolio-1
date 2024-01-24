@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Portfolio = () => {
   return (
-    <div className=" font-[`${inter}`]">
+    <div className="flex flex-col sm:max-w-[1440px] sm:mx-auto">
       <Header />
       <Hero />
       <About />

@@ -6,14 +6,14 @@ import { UpworkIcon } from "./icons/UpworkIcon";
 
 export const ExperienceCard = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-[24px] ">
+    <div className="flex flex-col justify-center items-center gap-[24px] sm:gap-[48px]">
       {experienceData.map((element) => (
-        <div className="flex sm:max-w-[896px] flex-col p-[32px] items-start rounded-[12px] bg-[#FFF] shadow-[0px_2px_2px_0px rgba(0,0,0,0.06), 0px_4px_3px_0px rgba(0,0,0,0.07)]">
-          <div className="flex w-[100%] flex-col gap-4 self-stretch">
-            <div className="flex items-start flex-[1 0 0]">
+        <div className="flex sm:w-[896px] flex-col p-[32px] items-start rounded-[12px] bg-[#FFF] shadow-[0px_2px_2px_0px rgba(0,0,0,0.06), 0px_4px_3px_0px rgba(0,0,0,0.07)]">
+          <div className="flex w-[100%] flex-col gap-4 self-stretch sm:gap-12 sm:flex-row sm:justify-between">
+            <div className="flex items-start flex-[1 0 0] w-[190px]">
               <UpworkIcon />
             </div>
-            <div>
+            <div className="sm:order-last">
               <p className="text-[#374151] font-sans text-[16px] not-italic font-normal leading-6">
                 {element.posDate}
               </p>
@@ -43,10 +43,10 @@ export const WorkCard = () => {
     <div className="flex flex-col gap-[48px]">
       {workData.map((work) => (
         <div className="flex flex-col sm:flex-row max-w-[1152px] rounded-[12px] shadow-md justify-center">
-          <div className="flex p-[32px] justify-center items-center sefl-stretch rounded-[12px_12px_0_0] border-b border-gray-100 bg-gray-50">
+          <div className="flex p-[32px] justify-center items-center sefl-stretch rounded-[12px_12px_0_0] border-b border-gray-100 bg-gray-50 sm:p-[48px] sm:w-[576px] sm:h-[480px] sm:rounded-[12px_0_0_12px]">
             {work.image}
           </div>
-          <div className="flex p-[32px] flex-col items-center gap-[24px] self-stretch rounded-[12px_0_0_12px]">
+          <div className="flex p-[32px] flex-col items-center gap-[24px] self-stretch rounded-[12px_0_0_12px] sm:p-[48px] sm:w-[576px] sm:h-[480px] sm:rounded-[0_12px_12px_0]">
             <div className="flex w-[100%] justify-start items-start">
               <h2 className="text-[#111827] font-sans text-[20px] not-italic font-semibold leading-7">
                 {work.workTitle}

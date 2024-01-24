@@ -16,14 +16,14 @@ export const Skills = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-start gap-4 self-stretch">
+        <div className="flex flex-wrap justify-between items-start gap-4 self-stretch">
           {skillsIcon.map((icon) => (
             <div className="flex flex-col justify-center items-center gap-2 self-stretch">
               <div>{icon.icon}</div>
               <p>{icon.iconName}</p>
             </div>
           ))}
-        </div>
+        </div>  
       </div>
     </div>
   );

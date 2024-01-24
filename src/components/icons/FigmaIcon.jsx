@@ -2,12 +2,12 @@ export function FigmaIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="44"
-      height="64"
+      width={44}
+      height={64}
       viewBox="0 0 44 64"
       fill="none"
     >
-      <g clip-path="url(#clip0_327_543)">
+      <g clipPath="url(#clip0_327_543)">
         <path
           d="M22 31.9999C22 29.1709 23.1238 26.4578 25.1242 24.4574C27.1246 22.4571 29.8377 21.3333 32.6667 21.3333C35.4956 21.3333 38.2087 22.4571 40.2091 24.4574C42.2095 26.4578 43.3333 29.1709 43.3333 31.9999C43.3333 34.8289 42.2095 37.542 40.2091 39.5424C38.2087 41.5428 35.4956 42.6666 32.6667 42.6666C29.8377 42.6666 27.1246 41.5428 25.1242 39.5424C23.1238 37.542 22 34.8289 22 31.9999Z"
           fill="#1ABCFE"
@@ -32,8 +32,8 @@ export function FigmaIcon() {
       <defs>
         <clipPath id="clip0_327_543">
           <rect
-            width="42.6667"
-            height="64"
+            width={42.6667}
+            height={64}
             fill="white"
             transform="translate(0.666748)"
           />

@@ -1,3 +1,6 @@
+import { MoreIcon } from "@/components/icons";
+import { WorkImg } from "@/components/icons";
+
 export const experienceData = [
   {
     icon: "/icons/logo-upwork.jpg",
@@ -33,7 +36,7 @@ export const experienceData = [
 
 export const workData = [
   {
-    image: "/workImage.png",
+    image: <WorkImg />,
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -49,11 +52,11 @@ export const workData = [
       "Storybook",
       "Git",
     ],
-    workIcon: "/icons/icon-more.jpg",
+    workIcon: <MoreIcon />,
     id: "normal",
   },
   {
-    image: "/workImage.png",
+    image: <WorkImg />,
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -69,11 +72,11 @@ export const workData = [
       "Storybook",
       "Git",
     ],
-    workIcon: "/icons/icon-more.jpg",
+    workIcon: <MoreIcon />,
     id: "reverse",
   },
   {
-    image: "/workImage.png",
+    image: <WorkImg />,
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -89,7 +92,7 @@ export const workData = [
       "Storybook",
       "Git",
     ],
-    workIcon: "/icons/icon-more.jpg",
+    workIcon: <MoreIcon />,
     id: "normal",
   },
 ];

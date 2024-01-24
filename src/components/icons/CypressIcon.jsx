@@ -2,12 +2,12 @@ export function CypressIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="64"
-      height="64"
+      width={64}
+      height={64}
       viewBox="0 0 64 64"
       fill="none"
     >
-      <g clip-path="url(#clip0_327_551)">
+      <g clipPath="url(#clip0_327_551)">
         <path
           d="M1.1387 40.4783C0.384155 37.7304 0 34.8763 0 32.0016C0 18.8788 8.24168 6.87991 20.5099 2.14819L22.1184 6.31115C11.5582 10.385 4.46553 20.7084 4.46553 32.0016C4.46553 34.4788 4.79477 36.932 5.443 39.2962L1.1387 40.4783Z"
           fill="#58D09E"
@@ -35,7 +35,7 @@ export function CypressIcon() {
       </g>
       <defs>
         <clipPath id="clip0_327_551">
-          <rect width="64" height="64" fill="white" />
+          <rect width={64} height={64} fill="white" />
         </clipPath>
       </defs>
     </svg>

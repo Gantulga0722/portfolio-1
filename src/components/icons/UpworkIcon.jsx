@@ -2,20 +2,22 @@ export function UpworkIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="102"
-      height="28"
+      width={102}
+      height={28}
       viewBox="0 0 102 28"
       fill="none"
     >
-      <g clip-path="url(#clip0_327_578)">
+      <g clipPath="url(#clip0_327_578)">
         <mask
           id="mask0_327_578"
-          style="mask-type:luminance"
+          style={{
+            maskType: "luminance",
+          }}
           maskUnits="userSpaceOnUse"
-          x="0"
-          y="0"
-          width="102"
-          height="28"
+          x={0}
+          y={0}
+          width={102}
+          height={28}
         >
           <path d="M102 0H0V28H102V0Z" fill="white" />
         </mask>
@@ -44,7 +46,7 @@ export function UpworkIcon() {
       </g>
       <defs>
         <clipPath id="clip0_327_578">
-          <rect width="102" height="28" fill="white" />
+          <rect width={102} height={28} fill="white" />
         </clipPath>
       </defs>
     </svg>

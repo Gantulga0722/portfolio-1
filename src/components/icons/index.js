@@ -26,3 +26,5 @@ export * from "./LocationIcon";
 export * from "./HanburgerIcon";
 export * from "./CloseIcon";
 export * from "./ThemeIcon";
+export * from "./WorkImg";
+export * from "./CopyRightIcon";

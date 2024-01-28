@@ -28,3 +28,4 @@ export * from "./CloseIcon";
 export * from "./ThemeIcon";
 export * from "./CopyRightIcon";
 export * from "./WorkImg";
+export * from "./DarkThemeIcon";

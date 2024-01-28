@@ -1,9 +1,28 @@
 import React from "react";
 import { Buttons } from "./Buttons";
+import { useTheme } from "@/context/ThemeContex";
+import { useState } from "react";
 
 export const About = () => {
+  const [dropDown, setDropDown] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const changeThemeHandler = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+  const divColor = theme == "light" ? "bg-gray-50" : "bg-[#111827]";
+  const spanColor = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
+  const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
+  const hTagClassName = theme == "light" ? "text-gray-900" : "text-[#F9FAFB]";
+  const divBgClassName = theme == "light" ? "bg-[#FFF]" : "bg-[#030712]";
+  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#030712]";
+  const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
+
   return (
-    <div className="flex px-[16px] py-[64px] justify-between items-start self-stretch bg-gray-50 sm:px-[80px] sm:py-[96px]">
+    <div
+      className={`flex px-[16px] py-[64px] justify-between items-start self-stretch ${divColor} sm:px-[80px] sm:py-[96px]`}
+      id="about"
+    >
       <div className="flex flex-col items-center gap-6 flex-[1_0_0] sm:px-[32px] sm:gap-12">
         <div className="flex flex-col justify-center items-center self-stretch">
           <Buttons buttonName={"About me"} />

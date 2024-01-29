@@ -15,7 +15,7 @@ export const About = () => {
   const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
   const hTagClassName = theme == "light" ? "text-gray-900" : "text-[#F9FAFB]";
   const divBgClassName = theme == "light" ? "bg-[#FFF]" : "bg-[#030712]";
-  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#030712]";
+  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#111827]";
   const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
 
   return (
@@ -29,8 +29,12 @@ export const About = () => {
         </div>
         <div className="flex flex-col items-start gap-12 self-stretch sm:flex-row">
           <div className="flex flex-col items-center self-stretch relative sm:w-[584px] sm:items-start sm:flex-[1_0_0] sm:min-w-[444px]">
-            <div className="w-[280px] h-[360px] shrink-0 border-[8px] border-gray-50 bg-[url(/images/about-image.jpg)] bg-cover z-[1] absolute sm:w-[400px] sm:h-[480px] sm:ml-[40px]"></div>
-            <div className="w-[320px] h-[360px] shrink-0 border-[8px] border-gray-50 bg-gray-200 mt-[20px] sm:w-[400px] sm:h-[480px] sm:mt-[40px]"></div>
+            <div
+              className={`w-[280px] h-[360px] shrink-0 border-[8px] ${borderColor} bg-[url(/images/about-image.jpg)] bg-cover z-[1] absolute sm:w-[400px] sm:h-[480px] sm:ml-[40px]`}
+            ></div>
+            <div
+              className={`w-[320px] h-[360px] shrink-0 border-[8px] ${borderColor} ${shadowColor} mt-[20px] sm:w-[400px] sm:h-[480px] sm:mt-[40px]`}
+            ></div>
           </div>
           <div className="flex flex-col items-start gap-6 self-stretch sm:w-[584px] sm:min-w-[444px]">
             <h2 className="self-stretch text-gray-900 font-sans text-[24px] not-italic font-semibold leading-8 tracking-[-0.48px]">
@@ -94,7 +98,7 @@ export const About = () => {
                   </li>
                 </ul>
               </div>
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6">
+              <p className="text-gray-600 self-stretch font-sans text-[16px] not-italic font-normal leading-6">
                 One last thing, I'm available for freelance work, so feel free
                 to reach out and say hello! I promise I don't bite 😉
               </p>

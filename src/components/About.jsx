@@ -1,10 +1,8 @@
 import React from "react";
 import { Buttons } from "./Buttons";
 import { useTheme } from "@/context/ThemeContex";
-import { useState } from "react";
 
 export const About = () => {
-  const [dropDown, setDropDown] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const changeThemeHandler = () => {
@@ -13,8 +11,6 @@ export const About = () => {
   const divColor = theme == "light" ? "bg-gray-50" : "bg-[#111827]";
   const spanColor = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
   const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const hTagClassName = theme == "light" ? "text-gray-900" : "text-[#F9FAFB]";
-  const divBgClassName = theme == "light" ? "bg-[#FFF]" : "bg-[#030712]";
   const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#111827]";
   const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
 
@@ -41,7 +37,9 @@ export const About = () => {
               Curious about me? Here you have it:
             </h2>
             <div className="flex flex-col items-start gap-4 self-stretch">
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 I'm a passionate,{" "}
                 <span className="font-sans text-[16px] not-italic font-normal leading-6 underline">
                   self-proclaimed
@@ -52,7 +50,9 @@ export const About = () => {
                 pixel perfect design, and writing clear, readable, highly
                 performant code matters to me.
               </p>
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 I began my journey as a web developer in 2015, and since then,
                 I've continued to grow and evolve as a developer, taking on new
                 challenges and learning the latest technologies along the way.
@@ -61,44 +61,64 @@ export const About = () => {
                 using modern technologies such as Next.js, TypeScript, Nestjs,
                 Tailwindcss, Supabase and much more.
               </p>
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 I am very much a progressive thinker and enjoy working on
                 products end to end, from ideation all the way to development.
               </p>
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 When I'm not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
                 early startups or enjoying some free time. You can follow me on{" "}
-                <span className="font-sans text-[16px] not-italic font-normal leading-6 underline text-gray-600">
+                <span
+                  className={`font-sans text-[16px] not-italic font-normal leading-6 underline ${spanColor}`}
+                >
                   Twitter
                 </span>{" "}
                 where I share tech-related bites and build in public, or you can
                 follow me on{" "}
-                <span className="font-sans text-[16px] not-italic font-normal leading-6 underline text-gray-600">
+                <span
+                  className={`font-sans text-[16px] not-italic font-normal leading-6 underline ${spanColor}`}
+                >
                   GitHub
                 </span>
                 .
               </p>
-              <p className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 Finally, some quick bits about me.
               </p>
               <div className="flex items-start gap-[10px] self-stretch">
                 <ul className="flex flex-wrap gap-[10px] list-disc pl-[20px] justify-around">
-                  <li className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600 w-[267px] h-[24px]">
+                  <li
+                    className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${spanColor} w-[267px] h-[24px]`}
+                  >
                     B.E. in Computer Engineering
                   </li>
-                  <li className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600 w-[267px] h-[24px]">
+                  <li
+                    className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${spanColor} w-[267px] h-[24px]`}
+                  >
                     Avid learner
                   </li>
-                  <li className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600 w-[267px] h-[24px]">
+                  <li
+                    className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${spanColor} w-[267px] h-[24px]`}
+                  >
                     Full time freelancer
                   </li>
-                  <li className="self-stretch font-sans text-[16px] not-italic font-normal leading-6 text-gray-600 w-[267px] h-[24px]">
+                  <li
+                    className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${spanColor} w-[267px] h-[24px]`}
+                  >
                     Aspiring indie hacker
                   </li>
                 </ul>
               </div>
-              <p className="text-gray-600 self-stretch font-sans text-[16px] not-italic font-normal leading-6">
+              <p
+                className={`self-stretch font-sans text-[16px] not-italic font-normal leading-6 ${pTagClassName}`}
+              >
                 One last thing, I'm available for freelance work, so feel free
                 to reach out and say hello! I promise I don't bite 😉
               </p>

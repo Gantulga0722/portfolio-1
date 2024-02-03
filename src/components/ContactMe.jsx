@@ -7,21 +7,17 @@ import { GitIcon } from "./icons";
 import { TwitterIcon } from "./icons";
 import { FigIcon } from "./icons";
 import { useTheme } from "@/context/ThemeContex";
-import { useState } from "react";
 
 export const ContactMe = () => {
-  const [dropDown, setDropDown] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const changeThemeHandler = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-  const spanColor = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
+  const spanColor = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
   const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const hTagClassName = theme == "light" ? "text-gray-900" : "text-[#F9FAFB]";
+  const hTagClassName = theme == "light" ? "text-[#111827]" : "text-[#F9FAFB]";
   const divBgClassName = theme == "light" ? "bg-[#FFF]" : "bg-[#030712]";
-  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#030712]";
-  const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
 
   return (
     <div
@@ -35,7 +31,9 @@ export const ContactMe = () => {
           </div>
           <div className="flex flex-col justify-center items-center self-stretchs">
             <div className="max-w-[576px] self-stretch">
-              <p className="text-gray-600 text-center font-sans text-[18px] not-italic font-normal leading-7">
+              <p
+                className={`${pTagClassName} text-center font-sans text-[18px] not-italic font-normal leading-7`}
+              >
                 What’s next? Feel free to reach out to me if you're looking for
                 a developer, have a query, or simply want to connect.
               </p>
@@ -47,7 +45,9 @@ export const ContactMe = () => {
             <div>
               <MessageIcon />
             </div>
-            <span className="text-[#111827] text-center font-sans text-[18px] not-italic font-semibold leading-7 tracking-[-0.36px] sm:text-[36px] sm:leading-10 sm:tracking-[-0.72px]">
+            <span
+              className={`${hTagClassName} text-center font-sans text-[18px] not-italic font-semibold leading-7 tracking-[-0.36px] sm:text-[36px] sm:leading-10 sm:tracking-[-0.72px]`}
+            >
               reachsagarshah@gmail.com
             </span>
             <div>
@@ -58,7 +58,9 @@ export const ContactMe = () => {
             <div>
               <PhoneIcon />
             </div>
-            <span className="text-[#111827] text-center font-sans text-[18px] not-italic font-semibold leading-7 tracking-[-0.36px] sm:text-[36px] sm:leading-10 sm:tracking-[-0.72px]">
+            <span
+              className={`${hTagClassName} text-center font-sans text-[18px] not-italic font-semibold leading-7 tracking-[-0.36px] sm:text-[36px] sm:leading-10 sm:tracking-[-0.72px]`}
+            >
               +91 8980500565
             </span>
             <div>
@@ -67,7 +69,9 @@ export const ContactMe = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center self-stretch gap-4">
-          <p className="text-[#4B5563] font-sans text-[16px] not-italic leading-6">
+          <p
+            className={`${spanColor} font-sans text-[16px] not-italic leading-6`}
+          >
             You may also find me on these platforms!
           </p>
           <div className="flex justify-center items-center self-stretch">

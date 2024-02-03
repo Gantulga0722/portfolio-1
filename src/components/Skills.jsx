@@ -29,17 +29,23 @@ export const Skills = () => {
           </div>
           <div className="flex sm:text-center sm:justify-center sm:items-center">
             <div className="flex max-w-[576px] self-stretch">
-              <p className="text-gray-600 text-center font-sans text-[18px] not-italic font-normal leading-7">
+              <p
+                className={`${pTagClassName} text-center font-sans text-[18px] not-italic font-normal leading-7`}
+              >
                 The skills, tools and technologies I am really good at:
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-start gap-4 self-stretch sm:flex-row sm:flex-wrap justify-between">
+        <div className="flex flex-wrap items-start gap-[70px] self-stretch sm:flex-row sm:flex-wrap justify-between">
           {skillsIcon.map((icon) => (
             <div className="flex flex-col justify-center items-center gap-2 self-stretch">
               <div>{icon.icon}</div>
-              <p>{icon.iconName}</p>
+              <p
+                className={`${pTagClassName} text-center font-sans text-[18px] not-italic font-normal leading-7`}
+              >
+                {icon.iconName}
+              </p>
             </div>
           ))}
         </div>

@@ -1,8 +1,6 @@
 import { useTheme } from "@/context/ThemeContex";
-import { useState } from "react";
 
 export function Buttons({ buttonName }) {
-  const [dropDown, setDropDown] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const changeThemeHandler = () => {

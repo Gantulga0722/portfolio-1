@@ -22,7 +22,8 @@ export const Hero = () => {
 
   return (
     <div
-      className={`flex px-[16px] py-[64px] justify-between items-start self-stretch ${divBgClassName} sm:px-[80px] sm:py-[96px]`}
+      className={`flex px-[16px] py-[64px] justify-between items-start self-stretch ${divBgClassName} sm:px-[80px] sm:py-[96px] mt-[50px]`}
+      id="hero"
     >
       <div className="flex flex-col items-start gap-12 flex-[1_0_0] sm:flex-row sm:px-[32px] sm:justify-between">
         <div className="flex flex-col justify-center items-center self-stretch relative sm:order-last sm:justify-start sm:items-end sm:min-w-[384px]">

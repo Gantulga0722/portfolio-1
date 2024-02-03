@@ -11,12 +11,8 @@ export const Footer = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
   const divColor = theme == "light" ? "bg-gray-50" : "bg-[#111827]";
-  const spanColor = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const hTagClassName = theme == "light" ? "text-gray-900" : "text-[#F9FAFB]";
-  const divBgClassName = theme == "light" ? "bg-[#FFF]" : "bg-[#030712]";
-  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#030712]";
-  const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
+  const spanColor = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
+  const pTagClassName = theme == "light" ? "text-[#4B5563]" : "text-[#D1D5DB]";
 
   return (
     <div
@@ -24,13 +20,19 @@ export const Footer = () => {
     >
       <div className="flex justify-center items-center self-stretch gap-2">
         <CopyRightIcon />
-        <p className="text-[#4B5563] font-sans text-[14px] not-italic font-normal leading-5">
+        <p
+          className={`${pTagClassName} font-sans text-[14px] not-italic font-normal leading-5`}
+        >
           2023 |{" "}
-          <span className="text-[#4B5563] font-sans text-[14px] not-italic font-normal leading-5 underline">
+          <span
+            className={`${spanColor} font-sans text-[14px] not-italic font-normal leading-5 underline`}
+          >
             Designed
           </span>{" "}
           and{" "}
-          <span className="text-[#4B5563] font-sans text-[14px] not-italic font-normal leading-5 underline">
+          <span
+            className={`${spanColor} font-sans text-[14px] not-italic font-normal leading-5 underline`}
+          >
             coded
           </span>{" "}
           with ❤️️ by Sagar Shah

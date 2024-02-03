@@ -1,10 +1,13 @@
 import ThemeProvider from "@/context/ThemeContex";
+import Layout from "@/components/Layout";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <Component {...pageProps} />;
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }

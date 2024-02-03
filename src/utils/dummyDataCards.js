@@ -36,7 +36,7 @@ export const experienceData = [
 
 export const workData = [
   {
-    image: <WorkImg />,
+    image: "/images/work-image.jpg",
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -56,7 +56,7 @@ export const workData = [
     id: "normal",
   },
   {
-    image: <WorkImg />,
+    image: "/images/work-image.jpg",
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -76,7 +76,7 @@ export const workData = [
     id: "reverse",
   },
   {
-    image: <WorkImg />,
+    image: "/images/work-image.jpg",
     workTitle: "Fiskil",
     workDescription:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",

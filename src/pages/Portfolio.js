@@ -9,7 +9,7 @@ import {
   Work,
   ContactMe,
   Footer,
-} from "@/components";
+} from "@/components/Index";
 import { useTheme } from "@/context/ThemeContex";
 
 const inter = Inter({ subsets: ["latin"] });

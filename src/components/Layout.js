@@ -1,4 +1,4 @@
-import { Header, Footer } from "@/components";
+import { Header, Footer } from "@/components/Index";
 import { useTheme } from "@/context/ThemeContex";
 
 const Layout = ({ children }) => {

@@ -11,7 +11,7 @@ export const About = () => {
   const divColor = theme == "light" ? "bg-gray-50" : "bg-[#111827]";
   const spanColor = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
   const pTagClassName = theme == "light" ? "text-gray-600" : "text-[#D1D5DB]";
-  const borderColor = theme == "light" ? "border-[#FFF]" : "border-[#111827]";
+  const borderColor = theme == "light" ? "border-gray-50" : "border-[#111827]";
   const shadowColor = theme == "light" ? "bg-gray-200" : "bg-[#374151]";
 
   return (
